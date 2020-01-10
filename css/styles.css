@@ -81,7 +81,7 @@ header {
 /* mid header: */
 
 .header-form {
-    position: fixed;
+    position: absolute;
     width: 75%;
     top: 50%;
     left: 50%;
@@ -118,33 +118,184 @@ header {
     height: 16%;
     background-color: rgba(57, 61, 72, 0.87);
 }
+.row_header{
+    width:100%;
+    margin:0 auto;
+    height: 100%;
+}
+.fa-fan{
+    
+    border : 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 13%;
+    margin-left: 20%;
+    
+}
+i:link,
+i:visited{
+    
+    border : 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 13%;
+    margin-left: 20%;
+    transition: background-color 0.2s, color 0.2s;
+    
+}
+i:hover,
+i:active{
+    background-color: #fff;
+    border : 1px solid #fff;
+    color: #e67e22;  
+}
+.slid i:hover,
+.slid i:active{
+    background-color: transparent;
+    border: none;
+    color: #e67e22;  
+}
+.fa-arrow-right, .fa-arrow-left{
+    color: #fff;
+}
+.icon-para{
+    color: #fff;
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Latest JObs Section :*/
+/* ---------------------------------------------------------------------------------------*/
+.latest-section h1{
+    font-weight: 300;
+    margin-top: 5% ;
+    margin-bottom: 3.5%;
+}
+.background-style{
+    background-color:#e67e22 ;
+    color:rgb(228, 222, 222);
+}
+.background-style:hover,
+.background-style:active{
+    background-color:rgb(228, 222, 222) ;
+    color:#e67e22;
+}
+
+.background-style a:link,
+.background-style a:visited{
+    background-color:rgb(228, 222, 222) ;
+    color:#e67e22;
+    border-radius: 0;
+    transition: background-color 0.2, color 0.2s ;
+}
+.background-style a:hover,
+.background-style a:active{
+    background-color: #e67e22;
+    color: rgb(228, 222, 222);
+    border-radius: 0;
+}
+
+.fa-square{
+    color: rgb(228, 222, 222);
+}
+
+/* ---------------------------------------------------------------------------------------*/
+/* ABOUT SECTION :*/
+/* ---------------------------------------------------------------------------------------*/
+.about{
+    background-size: cover;
+    background-image: radial-gradient(rgba(51, 54, 61, 0.7), rgba(118, 123, 129, 0.7)),url(../img/adult-beverage-blue-caffeine-339929.jpg);
+    background-position: top;
+    height: 60vh ;
+    background-attachment: fixed;
+}
+.about h2, h4{
+    font-weight: 500;
+}
+.about p{
+    color: rgb(230, 228, 228);
+    font-weight: 400;
+}
+.about a{
+    background-color: rgb(214, 213, 213);
+    border-radius: 0;
+}
 /* ---------------------------------------------------------------------------------------*/
 /* Queries :*/
 /* ---------------------------------------------------------------------------------------*/
 
-
-@media only screen and (max-width: 1191px){
+@media only screen and (max-width: 1235px){
     body{
-        font-size: 60%;
+        font-size: 90%;
         }
     
    
 }
-@media only screen and (max-width: 854px){
+@media only screen and (max-width: 1191px){
+    body{
+        font-size: 70%;
+        }
+     
+}
+@media only screen and (max-width: 983px){
+    body{
+        font-size: 60%;
+        }
+     
+}
+@media only screen and (max-width: 893px){
     body{
         font-size: 50%;
         }
     
    
 }
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 810px){
+    body{
+        font-size: 43%;
+        }
+        .row_header{
+            width: 100%;
+        
+        }
+}
+@media only screen and (max-width: 767px){
+    body{
+        font-size: 42%;
+        }
+        .row_header{
+            width: 100%;
+        
+        }
+        /* .header-form {
+            position: fixed;
+            width: 80%;
+            top: 1%;
+            left: 50%;
+            transform: translate(-50%,28%);
+            
+        } */
+    }
+@media only screen and (max-width: 361px){
     body{
         font-size: 49%;
         }
-    
-   
+        .fa-arrow-right{
+            display: none;
+        }
+        .fa-arrow-left{
+            display: none;
+        }
 }
 
-
-
-
+/* @media only screen and (max-hight: 629px){
+    body{
+        font-size: 49%;
+        }
+        .header-form {
+            position: fixed;
+            width: 80%;
+            top: 1%;
+            left: 50%;
+            transform: translate(-50%,-20%);
+            
+        }
+} */
