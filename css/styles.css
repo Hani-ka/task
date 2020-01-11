@@ -204,7 +204,7 @@ i:active{
     background-size: cover;
     background-image: radial-gradient(rgba(51, 54, 61, 0.7), rgba(118, 123, 129, 0.7)),url(../img/adult-beverage-blue-caffeine-339929.jpg);
     background-position: top;
-    height: 60vh ;
+     
     background-attachment: fixed;
 }
 .about h2, h4{
@@ -215,8 +215,109 @@ i:active{
     font-weight: 400;
 }
 .about a{
-    background-color: rgb(214, 213, 213);
+    background-color: rgb(233, 230, 230);
     border-radius: 0;
+    color: rgb(53, 53, 53);
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Testmonial :*/
+/* ---------------------------------------------------------------------------------------*/
+.testmonial h2 {
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+}
+.testmonial img{
+    width: auto;
+    height: 90px;
+}
+.testmonial h6{
+    color: #ee8e3a;
+}
+
+/* ---------------------------------------------------------------------------------------*/
+/* Work  with us :*/
+/* ---------------------------------------------------------------------------------------*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    height: 300px; /* only if you want fixed height */
+    }
+
+/* ---------------------------------------------------------------------------------------*/
+/* Queries :*/
+/* ---------------------------------------------------------------------------------------*/
+.back-img-1 div{
+    background-image: url(../img/5.jpg);
+    background-position: center top;
+}
+.back-img-1 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/5.jpg);
+    
+}
+.back-img-2 div{
+    background-image: url(../img/4.jpeg);
+    background-position: center center;
+}
+.back-img-2 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/4.jpeg);
+    
+}
+.back-img-3 div{
+    background-image: url(../img/3.jpeg);
+    background-position: right center;
+}
+.back-img-3 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/3.jpeg);
+    
+}
+.back-img-4 div{
+    background-image: url(../img/2.jpeg);
+    background-position: left center;
+
+}
+.back-img-4 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/2.jpeg);
+    
+}
+.background-insight div{
+    background-size: cover; 
+    background-attachment: local;
+    color: transparent;
+}
+
+.background-insight div:hover{
+    color: white;
+}
+.background-insight h5{
+    padding-top: 80%;
+    padding-left: 10%;
+}
+.background-insight p{
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Queries :*/
+/* ---------------------------------------------------------------------------------------*/
+footer{
+    background-color: rgb(37, 37, 37);
+}
+footer .bord-right i {
+    background-color: rgb(112, 112, 112);
+    border : 1px solid rgb(112, 112, 112);
+    color: #fff;
+    padding: 6%;
+    margin-left: 3%;
+}
+footer .bord-right i:hover{
+    background-color:#e67e22;
+    color:#fff;
+    border: 1px solid #e67e22;
+    
+}
+.bord-right {
+    border-right: 1px solid  rgb(112, 112, 112);
 }
 /* ---------------------------------------------------------------------------------------*/
 /* Queries :*/
@@ -230,26 +331,26 @@ i:active{
    
 }
 @media only screen and (max-width: 1191px){
-    body{
+    body header{
         font-size: 70%;
         }
      
 }
 @media only screen and (max-width: 983px){
-    body{
+    body header{
         font-size: 60%;
         }
      
 }
 @media only screen and (max-width: 893px){
-    body{
+    body header{
         font-size: 50%;
         }
     
    
 }
 @media only screen and (max-width: 810px){
-    body{
+    body header{
         font-size: 43%;
         }
         .row_header{
@@ -258,7 +359,7 @@ i:active{
         }
 }
 @media only screen and (max-width: 767px){
-    body{
+    body header{
         font-size: 42%;
         }
         .row_header{
@@ -274,7 +375,7 @@ i:active{
             
         } */
     }
-@media only screen and (max-width: 361px){
+/* @media only screen and (max-width: 361px){
     body{
         font-size: 49%;
         }
@@ -284,7 +385,7 @@ i:active{
         .fa-arrow-left{
             display: none;
         }
-}
+} */
 
 /* @media only screen and (max-hight: 629px){
     body{
