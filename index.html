@@ -4,47 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
     <title>Volcanic</title>
 </head>
 <body>
     <!-- THe HEADER-->
-    <header class="flex d-flex">
-        <nav class="navbar navbar-dark navbar-expand-md  fixed-top p-0 mr-md-5 d-flex align-items-end">
-            <h1 class="navbar-brand pb-0 pt-4 pt-sm-0 mb-0">volcanic</h1>
-            <div class="btn-group d-md-none ml-auto mr-1">
-                <a href="#" class="btn custom-button">LOGIN</a>
-                <a href="#" class="btn custom-button">REGISTER</a>
-            </div>
-            <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
+    <header class=>
+        <nav class="navbar navbar-dark navbar-expand-lg pt-0 px-0 px-sm-2">
+            <h1 class="navbar-brand  m-0 pt-xl-4">volcanic</h1>
+            <button id="btn" class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" >
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="pos collapse navbar-collapse ml-auto" id="Navbar">
-                    <ul class="navbar-nav  main-nav d-flex align-items-end ml-auto mr-5" >
-                        <li class="nav-item"><a class="nav-link" href="#">JOBS</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">ABOUT</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">CANDIDATES</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">CLIENTS</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">JOIN US</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">INSIGHTS</a></li>
-                        <li class="nav-item""><a class="nav-link" href="#">CONTACT US</a></li>
+            <div class="collapse navbar-collapse align-self-start justify-content-end"  id="Navbar">
+                <ul class="nav nav-fill main-nav">
+                    <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#jobs" data-scroll=""="jobs">JOBS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#about"  data-scroll="about">ABOUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#candidates"  data-scroll="candidates">CANDIDATES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#clients"  data-scroll="clients">CLIENTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#join"  data-scroll="join">JOIN US</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#insights"  data-scroll="insights">INSIGHTS</a>
+                      </li>
+                      <li class="nav-item mr-lg-3">
+                        <a class="nav-link pt-4  pt-xl-5 text-white" href="#contact" data-scrol="contact">CONTACT US</a>
+                      </li>
+                      <div class="nav-butn d-flex flex-row align-self-end ml-auto mr-auto ml-xl-0  d-felx d-xl-none">
+                        <a href="#!" >Login</a>
+                        <a href="#!" >REGISTER</a>
+                    </div>
                     </ul>
-                </div>
-                <div class="btn-group float-right mt-2 d-none d-md-flex">
-                    <a href="#" class="btn custom-button">LOGIN</a>
-                    <a href="#" class="btn custom-button">REGISTER</a>
-                </div>
+                    <div class="nav-butn  flex-row align-self-end ml-5 ml-xl-0 d-none d-xl-flex">
+                        <a href="#!" >Login</a>
+                        <a href="#!" >REGISTER</a>
+                    </div>
+            </div>
         </nav>
-        <div class="header-form">
-            <div class="container mr-auto ml-auto mb-5">
+        <div class="header-form ">
+            <div class="container mr-auto ml-auto mb-0 mb-xl-3 px-0">
                 <h3 class="d-block text-center">Accusantium doloremque<br>quae ab illo</h3>
             </div>
-            <form class=" form-inline justify-content-center">
+            <form class=" form-inline justify-content-center mt-1 mt-xl-2 d-flex flex-column flex-lg-row">
                 <label  for="keywrodField"></label>
                 <input type="text" class="form-control mb-2 mr-2" id="keywrodField" name="keywrodField" placeholder="keywrod">
                 <label  for="locationField"></label>
@@ -52,109 +68,204 @@
                 <a href="#" class="btn custom-button">SEARCH JOBS</a>
             </form>
         </div>
-        <div class="align-self-end  h-16 w-100">
-
-                <div class="row row_header d-flex justify-content-center">
-                    <div class="col col-1 d-flex justify-content-center slid">
-                        <i class="fas fa-arrow-left fa-2x align-self-center"></i>
-                    </div>
-                    <div class="col col-2 d-flex justify-content-center">
-                        <div class="align-self-center justify-content-center">
-                            <i class="fas fa-fan fa-2x align-self-start"></i>
-                            <p class="align-self-end mb-0 mt-1 icon-para">Eiusmod tempor</p>
+        <div class="header-icon-nav ">
+            <div class="container-fluid">
+                <div class="row">
+                     <div class="col col-1 mt-lg-2 mt-xl-4">
+                        <div class="offset-md-6 col col-6 slid mt-3 mt-lg-4">
+                            <i class="fas fa-arrow-left fa-2x"></i>
                         </div>
-                    </div>
-                    <div class="col col-2 d-flex justify-content-center">
-                        <div class="align-self-center justify-content-center">
-                            <i class="fas fa-fan fa-2x align-self-start"></i>
-                            <p class="align-self-end mb-0 mt-1 icon-para">Eiusmod tempor</p>
+                     </div>
+                     <div class="col col-10 my-1 my-lg-2  mt-xl-3 ">
+                         <div class="row">
+                             <div class="col col-4 col-sm-2 offset-sm-1">
+                                <i class="fas fa-fan fa-2x"></i>
+                                <p class="icon-para">Eiusmod tempor</p>
+                             </div>
+                             <div class="col col-4 col-sm-2">
+                                <i class="fas fa-fan fa-2x"></i>
+                                <p class="icon-para">Eiusmod tempor</p>
+                             </div>
+                             <div class="col col-4 col-sm-2">
+                                <i class="fas fa-fan fa-2x"></i>
+                                <p class="icon-para">Eiusmod tempor</p>
+                             </div>
+                             <div class="col d-none d-sm-block col-sm-2">
+                                <i class="fas fa-fan fa-2x"></i>
+                                <p class="icon-para">Eiusmod tempor</p>
+                             </div>
+                             <div class="col d-none d-sm-block col-sm-2">
+                                <i class="fas fa-fan fa-2x"></i>
+                                <p class="icon-para">Eiusmod tempor</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class=" col col-1 mt-lg-2  mt-xl-4">
+                        <div class="col col-6 slid mt-3 mt-lg-4">
+                            <i class="fas fa-arrow-right fa-2x"></i>
                         </div>
-                    </div>
-                    <div class="col col-2 d-flex justify-content-center">
-                        <div class="align-self-center justify-content-center">
-                            <i class="fas fa-fan fa-2x align-self-start"></i>
-                            <p class="align-self-end mb-0 mt-1 icon-para">Eiusmod tempor</p>
-                        </div>
-                    </div>
-                    <div class="col col-2 d-flex justify-content-center">
-                        <div class="align-self-center justify-content-center">
-                            <i class="fas fa-fan fa-2x align-self-start"></i>
-                            <p class="align-self-end mb-0 mt-1 icon-para">Eiusmod tempor</p>
-                        </div>
-                    </div>
-                    <div class="col col-2 d-flex justify-content-center">
-                        <div class="align-self-center justify-content-center">
-                            <i class="fas fa-fan fa-2x align-self-start"></i>
-                            <p class="align-self-end mb-0 mt-1 icon-para">Eiusmod tempor</p>
-                        </div>
-                    </div>
-                    <div class="col col-1 d-flex justify-content-center slid">
-                        <i class="fas fa-arrow-right fa-2x align-self-center"></i>
-                    </div>
+                     </div>
                 </div>
-
+            </div>
         </div>
     </header>
-<!-- THe LATESET JOBS SECTION ***********************************************************************************************-->
-
-    <section class="latest-section">
+    <!-- ***************************************************************************************************************************************     -->
+    <section id="Jobs" class="latest-section mt-2">
         <div class="container">
             <div class="col col-12 d-flex justify-content-center">
                 <h1>Latest Jobs</h1>
             </div>
         </div>
-        <div class="flex flex-wrap d-flex justify-content-center mb-5 job-box">
-            <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 px-4 pt-3 job-box">
-                <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
-                <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
-                <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
-                <div class="align-content-end d-flex justify-content-end">
-                    <a href="#" class="btn custom-button ">APPLY</a>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">    
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="flex flex-wrap d-flex justify-content-center mb-5 job-box">
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-md-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="flex flex-wrap d-flex justify-content-center mb-5 job-box">
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-md-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="flex flex-wrap d-flex justify-content-center mb-5 job-box">
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-md-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                        <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 p-l-4 pr-0 pt-3 job-box d-none d-xl-block">
+                            <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
+                            <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
+                            <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
+                            <div class="align-content-end d-flex justify-content-end">
+                                <a href="#" class="btn custom-button ">APPLY</a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 px-4 pt-3 job-box d-none d-md-block">
-                <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
-                <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
-                <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
-                <div class="align-content-end d-flex justify-content-end">
-                    <a href="#" class="btn custom-button ">APPLY</a>
+                <div class="row m-1">
+                    <div class="col d-flex justify-content-center mb-3 indactors">
+                        <ul class="d-flex list-inline">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"><span class="fas fa-square mr-4 border-light"></span></li>
+                            <li data-target="#myCarousel" data-slide-to="1"><span class="fas fa-square mr-4 border-light"></span></li>
+                            <li data-target="#myCarousel" data-slide-to="2"><span class="fas fa-square mr-4 border-light"></span></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 px-4 pt-3 job-box d-none d-xl-block">
-                <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
-                <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
-                <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
-                <div class="align-content-end d-flex justify-content-end">
-                    <a href="#" class="btn custom-button ">APPLY</a>
-                </div>
-            </div>
-            <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 px-4 pt-3 job-box d-none d-xl-block">
-                <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
-                <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
-                <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
-                <div class="align-content-end d-flex justify-content-end">
-                    <a href="#" class="btn custom-button ">APPLY</a>
-                </div>
-            </div>
-            <div class="col-8 col-sm-5 col-md-4 col-lg-4 col-xl-2 background-style m-1 px-4 pt-3 job-box d-none d-xl-block">
-                <h5 class="d-block">Duis aute irure dolor in reprehenderit</h5>
-                <h6>&euro;20000 &dash; &euro;20000 &VerticalBar; LONDON</h6>
-                <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
-                <div class="align-content-end d-flex justify-content-end">
-                    <a href="#" class="btn custom-button ">APPLY</a>
-                </div>
-            </div>
-        </div>
-        <div class="row m-1">
-            <div class="col d-flex justify-content-center pb-3">
-                <i class="fas fa-square mr-4 border-light"></i>
-                <i class="fas fa-square mr-4 border-light"></i>
-                <i class="fas fa-square mr-4 border-light"></i>
-            </div>
         </div>
     </section>
+
 <!-- THe ABOUT SECTION ***********************************************************************************************-->
-    <section class="about  py-3">
+    <section id="about" class="about  my-3">
         <div class="container">
             <div class="row ">
                 <div class="col col-12 pt-sm-1 pb-sm-1 pt-xl-2 pb-xl-2  text-white">
@@ -184,14 +295,14 @@
         </div>
     </section>
     <!-- THe Testmonial SECTION ***********************************************************************************************-->
-    <section class="testmonial pb-2 pb-md-5">
-        <div class="container ">
-            <div class="flex row">
-                <div class="col col-12 d-flex justify-content-center">
+    <section id="clients" class="testmonial pb-2 pb-md-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col  col-12 d-flex justify-content-center">
                     <h2 class="my-sm-5">Testmonials</h2>
                 </div>
-                <div col col-12 d-flex justify-content-center>
-                    <p class="text-muted text-center">Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat. Duis aute irure dolor in reperhenederit in volupatete velit esse cllium dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatet non prodient, sunt in culpa qui officia</p>
+                <div class="col offset-1 col-10 d-flex justify-content-center">
+                    <p class="text-muted text-center ">Ut enim ad minim veniam,quis nostrud  exercitation ullmco labris nisi ut aliquip ex ea commodo consquat. Duis aute irure dolor in reperhenederit in volupatete velit esse cllium dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatet non prodient, sunt in culpa qui officia</p>
                 </div>
                 <div class="col col-12 d-flex justify-content-center">
                     <img class="rounded-circle mr-2" src="img/customer-1.jpg "  />
@@ -201,12 +312,12 @@
         </div>
     </section>
 <!-- THe Work for Us SECTION ***********************************************************************************************-->
-    <section class="workWithUs mt-5">
+    <section id="join" class="workWithUs mt-5">
         <div class="container">
             <div class="row">
                 <div class="col col-12 col-sm-6 p-2 px-sm-5 pt-lg-5  background-style">
                     <div class="d-flex justify-content-center">
-                        <h3>Work for us</h3>
+                        <h3 class="text-white">Work for us</h3>
                     </div>
                     <p class="text-center">Ut enim ad minim veniam,quis nostrud exercitation ullmco labris nisi ut aliquip ex ea commodo consquat.</p>
                     <div class="d-flex justify-content-center pt-3">
@@ -220,7 +331,7 @@
         </div>
     </section>
 <!-- Insights SECTION  ***********************************************************************************************-->
-    <section class="insigts my-4">
+    <section id="insihgt" class="insigts my-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-8 offset-2  d-flex justify-content-center pl-2 pl-sm-0 my-3">
@@ -247,14 +358,14 @@
                 <div class="col col-8 col-sm-5 col-lg-2 offset-2 offset-sm-0  pt-5 mr-2 background-insight back-img-4">
                     <div>
                         <h5 class="">Ut labore et dolore mangna</h5>
-                        <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris </p class="pl-lg-3">
+                        <p>Ut enim ad minim veniam,quis nostrud exercitation ullmco labris </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Insights SECTION ***********************************************************************************************-->
-    <footer>
+    <!-- Footer SECTION ***********************************************************************************************-->
+    <footer id="contact">
         <div class="container">
             <div class="row d-none d-lg-flex">
                 <div class="col col-4 d-flex px-0 py-5 my-4  text-white bord-right">
@@ -282,19 +393,37 @@
                 </div>
             </div>
             <div class="row d-flex d-lg-none">
-                <div class="col col-2 d-flex flex-column my-4 justify-content-center">
-                    <p class=" m-0 mr-sm-1 text-white">Get Social </p>
-                    <a href="#"><i class="fab fa-twitter  rounded-circle text-cente text-white"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in  rounded-circle text-cente text-white"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f  rounded-circle text-cente text-white"></i></a>
-                    
+                <div class="col col-2 d-flex flex-column my-4 pl-1 pr-3 justify-content-center hov">
+                    <p class=" m-0 text-white">Get Social </p>
+                    <a href="#" class="mb-1 ml-3"><i class="fab fa-twitter  rounded-circle text-white"></i></a>
+                    <a href="#" class="mb-1 ml-3"><i class="fab fa-linkedin-in  rounded-circle text-white"></i></a>
+                    <a href="#" class="mb-1 ml-3"><i class="fab fa-facebook-f  rounded-circle text-white"></i></a>   
+                </div>
+                <div class="col col-8 d-block flex-column pr-0 my-3 ml-2 bord-left">
+                    <div class="d-block flex-row">
+                        <i class="fas fa-envelope-open-text text-white fa-2x my-2 mr-2"></i>
+                        <p class="d-inline text-white mr-2">EMAIL US</p>
+                        <p class="d-inline text-white">info@volcanic.com</p>
+                    <div class="d-block flex-row">
+                        <i class="fas fa-comment-alt text-white fa-2x my-2 mr-2"></i>
+                        <p class="d-inline text-white text-center mr-2">GET IN TOUCH</p>
+                        <p class="d-inline text-white">UK&nbsp;&colon;&nbsp; 0161&nbsp;2171517</p>
+                    </div>
+                    <div class="d-block flex-row">
+                        <i class="fas fa-map-marked-alt text-white fa-2x my-2 mr-2"></i>
+                        <p class="d-inline text-white mr-5 mr-sm-2">FIND US&nbsp;</p>
+                        <p class="d-inline text-white">Dale House Floor8&comma;Tiviot Dale stockport&comma; SK11TB</p>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="Js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- build:js js/main.js -->
 </body>
 </html>

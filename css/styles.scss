@@ -1,0 +1,563 @@
+$ipad-pro-portrait-breakpoint: "(min-device-width : 1024px) and (max-device-width : 1024px) and (min-device-height : 1366px) and (max-device-height : 1366px) and (min-width: 1024px) and (max-width: 1024px)";
+
+
+/* ---------------------------------------------------------------------------------------*/
+/* Baisc setup*/
+/* ---------------------------------------------------------------------------------------*/
+
+
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;    
+}
+body{font-size:16px;}
+
+
+
+/* ---------------------------------------------------------------------------------------*/
+/* Header*/
+/* ---------------------------------------------------------------------------------------*/
+header {
+    
+    background-size: cover;
+    background-image: radial-gradient(rgba(51, 54, 61, 0.7), rgba(118, 123, 129, 0.4)),url(../img/andrea-natali-otjiUhq5Zcw-unsplash.jpg);
+    background-position: center;
+    height: 100vh ;
+    background-attachment: fixed;
+}
+/* THE navigations */
+.navbar-brand {
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: 400;
+    font-size: 280%;
+    margin-left: 2%;
+    
+}
+/* navigaton list :items */
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    border-top: 8px solid transparent;
+    transition: border-top 0.3s;
+    
+}
+.main-nav li a:hover {
+    border-top: 8px solid #e67e22;
+    
+}
+/* navigation buttuns : */ 
+.nav-butn a:link,
+.nav-butn a:visited{
+    text-decoration: none;
+    background-color:#e67e22 ;
+    color: #fff;
+    
+    padding: 14px 24px;
+    transition: background-top 0.3s, color 0.2s;
+    border-radius: 0;
+}
+.nav-butn  a:hover,
+.nav-butn  a:active{
+    background-color:#fff ;
+    color:rgb(0, 0, 0);
+}
+.custom-button:focus {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+/* mid header: */
+
+.header-form {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+}
+.header-form h3{
+    font-size: 310%;
+    color: #fff;
+    
+}
+.form-inline a:link,
+.form-inline a:visited{
+    background-color:#e67e22 ;
+    color:#fff;
+    padding: 9px 40px;
+    margin-bottom: 6px;
+    font-size: 90%;
+    transition: background-top 0.3s, color 0.2s;
+    border-radius: 0;
+}
+.form-control{
+    padding-right: 20%;
+    border-radius: 0;
+}
+.header-icon-nav{
+    position: absolute;
+    background-color: rgba(57, 61, 72, 0.87);
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height:14%;
+}
+.fa-fan{
+    
+    border : 1px solid #fff;
+    color: rgb(211, 211, 211);
+    border-radius: 50%;
+    padding: 7%;
+    margin-left: 42%;
+    margin-top: 7%;
+    font-size: 90%;
+    
+}
+.fa-arrow-right, .fa-arrow-left{
+    color: rgb(211, 211, 211);
+}
+.icon-para{
+    color: rgb(211, 211, 211);
+    margin: 1% 0 2% 1%;
+    text-align: center;
+}
+i:link,
+i:visited{
+    
+    border : 1px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 13%;
+    margin-left: 20%;
+    transition: background-color 0.2s, color 0.2s;
+    
+}
+i:hover,
+i:active{
+    background-color: #fff;
+    border : 1px solid #fff;
+    color: #e67e22;  
+}
+.slid i:hover,
+.slid i:active{
+    background-color: transparent;
+    border: none;
+    color: #fff;  
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Latest JObs Section :*/
+/* ---------------------------------------------------------------------------------------*/
+.latest-section h1{
+    font-weight: 300;
+    margin-top: 5% ;
+    margin-bottom: 3.5%;
+}
+.background-style{
+    background-color:#e67e22 ;
+    
+}
+.background-style h5,.background-style h6,.background-style > p  {
+    color: #fff; }
+
+.background-style a:link,
+.background-style a:visited{
+    background-color:rgb(228, 222, 222) ;
+    color:#e67e22;
+    border-radius: 0;
+    transition: background-color 0.2, color 0.2s ;
+}
+.background-style a:hover,
+.background-style a:active{
+    background-color: #e67e22;
+    color: rgb(228, 222, 222);
+    border-radius: 0;
+}
+
+.fa-square{
+    color: rgb(228, 222, 222);
+}
+.indactors span:hover,
+.indactors span:active{
+    border: 0px;
+    color: #e67e22;
+}
+
+/* ---------------------------------------------------------------------------------------*/
+/* ABOUT SECTION :*/
+/* ---------------------------------------------------------------------------------------*/
+.about{
+    background-size: cover;
+    background-image: radial-gradient(rgba(51, 54, 61, 0.7), rgba(118, 123, 129, 0.7)),url(../img/adult-beverage-blue-caffeine-339929.jpg);
+    background-position: top;
+     
+    background-attachment: fixed;
+}
+.about h2, h4{
+    font-weight: 500;
+}
+.about p{
+    color: rgb(230, 228, 228);
+    font-weight: 400;
+}
+.about a{
+    background-color: rgb(233, 230, 230);
+    border-radius: 0;
+    color: rgb(53, 53, 53);
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Testmonial :*/
+/* ---------------------------------------------------------------------------------------*/
+.testmonial h2 {
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+}
+.testmonial img{
+    width: auto;
+    height: 90px;
+}
+.testmonial h6{
+    color: #ee8e3a;
+}
+
+/* ---------------------------------------------------------------------------------------*/
+/* Work  with us :*/
+/* ---------------------------------------------------------------------------------------*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    height: 300px; /* only if you want fixed height */
+    }
+
+/* ---------------------------------------------------------------------------------------*/
+/* Insights :*/
+/* ---------------------------------------------------------------------------------------*/
+.back-img-1 div{
+    background-image: url(../img/5.jpg);
+    background-position: center top;
+}
+.back-img-1 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/5.jpg);
+    
+}
+.back-img-2 div{
+    background-image: url(../img/4.jpeg);
+    background-position: center center;
+}
+.back-img-2 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/4.jpeg);
+    
+}
+.back-img-3 div{
+    background-image: url(../img/3.jpeg);
+    background-position: right center;
+}
+.back-img-3 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/3.jpeg);
+    
+}
+.back-img-4 div{
+    background-image: url(../img/2.jpeg);
+    background-position: left center;
+
+}
+.back-img-4 div:hover{
+    background-image: linear-gradient(rgba(228, 202, 178, 0.7), rgba(230, 126, 34, 0.7)),url(../img/2.jpeg);
+    
+}
+.background-insight div{
+    background-size: cover; 
+    background-attachment: local;
+    color: transparent;
+}
+
+.background-insight div:hover{
+    color: white;
+}
+.background-insight h5{
+    padding-top: 80%;
+    padding-left: 10%;
+}
+.background-insight p{
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Footer :*/
+/* ---------------------------------------------------------------------------------------*/
+footer{
+    background-color: hsl(223, 10%, 27%);
+}
+footer .bord-right i {
+    background-color: hsl(208, 11%, 58%);
+    border : 1px solid hsl(208, 11%, 58%);
+    color: #fff;
+    padding: 3% 4%;
+    margin-left:  3%;
+}
+.bord-right i:hover,
+.hov i:hover{
+    background-color:#e67e22;
+    color:#fff;
+    border: 1px solid #e67e22;   
+}
+.flex-row i:active,
+.flex-row i:hover{
+    background-color:transparent;
+    border: none;
+}
+.bord-right {
+    border-right: 1px solid  hsl(208, 11%, 58%);
+}
+.bord-left {
+    border-left: 1px solid  hsl(208, 11%, 58%);
+}
+/* ---------------------------------------------------------------------------------------*/
+/* Queries :*/
+/* ---------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px){
+    nav ul, .nav-btn a{
+        font-size: 72%;
+    }
+    nav h1{
+        padding-top: 90%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0%;
+        transform: scale(0.7);
+    }
+    .header-icon-nav{
+        font-size: 95%;
+        height: 12%;
+    }
+}
+//.......................phones-landscape.............................:
+@media only screen and (max-width: 896px){
+    .header-icon-nav{
+        font-size: 78%;
+    }
+}
+@media only screen and (max-width: 853px){
+    .header-icon-nav{
+        font-size: 75%;
+        height: 14%;
+    }
+}
+@media only screen and (max-width: 823px){
+    .header-icon-nav{
+        font-size: 70%;
+    }
+}
+@media only screen and (max-width: 812px){
+    nav{
+        background-color: rgba(41, 39, 39, 0.521);
+        }
+        .main-nav li a:active,
+        .main-nav li a:hover
+         {
+            border-top: 8px solid transparent;
+        }
+    .header-form {
+        transform: scale(0.6);
+    }
+    .header-icon-nav{
+        font-size: 70%;
+        height: 16%;
+    }
+    .header-icon-nav .col{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 786px){
+    nav{
+        background-color: transparent;
+        }
+        .main-nav li a:active,
+        .main-nav li a:hover
+         {
+            border-top: 8px solid transparent;
+        }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0%;
+        transform: scale(0.6);
+    }
+    .header-icon-nav{
+        font-size: 70%;
+        height: 12%;
+    }
+    .header-icon-nav .col{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 740px){
+    .header-icon-nav{
+        height: 20%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0%;
+        transform: scale(0.5);
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 736px){
+    .header-icon-nav{
+        height: 20%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        transform: scale(0.5);
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 736px){
+    .header-icon-nav{
+        height: 20%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: -6%;
+        left: 0%;
+        transform: scale(0.5);
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 568px){
+    .header-icon-nav{
+        height: 20%;
+        font-size: 90%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        left: 0%;
+        transform: scale(0.3);
+        font-size: 130%;
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+//phones................portati...................:
+@media only screen and (max-width: 480px){
+    .header-icon-nav{
+        height: 10%;
+        font-size: 90%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0%;
+        transform: scale(0.7);
+        font-size: 130%;
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 414px){
+    .header-icon-nav{
+        height: 12%;
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 412px){
+    .header-icon-nav{
+        height: 12%;
+        font-size: 90%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        transform: scale(0.6);
+        font-size: 130%;
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 375px){
+    .header-form {
+        top: 17%;
+    }
+}
+@media only screen and (max-width: 360px){
+    .header-icon-nav{
+        height: 12%;
+        font-size: 90%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        transform: scale(0.6);
+        font-size: 130%;
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+@media only screen and (max-width: 320px){
+    .header-icon-nav{
+        height: 12%;
+        font-size: 76%;
+    }
+    .header-form {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        left: 0%;
+        transform: scale(0.6);
+        font-size: 130%;
+    }
+    .header-icon-nav .col{
+        padding-right: 6%; 
+    }
+}
+
+
+//.......................Tabs................................................:
+@media only screen and #{$ipad-pro-portrait-breakpoint}{
+    nav {
+        font-size: 80%;
+         } 
+      .header-form {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0%;
+        transform: scale(1.0);
+        font-size: 130%; }
+      .header-icon-nav {
+        font-size:160%;
+         }
+}
