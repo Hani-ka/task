@@ -60,9 +60,15 @@ module.exports = function (grunt) {
                     //for font-awesome     node_modules/@fortawesome/fontawesome-free
                     expand: true,
                     dot: true,
+<<<<<<< HEAD
                     cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts',
                     src: ['*.*'],
                     dest: 'dist/webfonts/'
+=======
+                    cwd: 'node_modules/@fortawesome',
+                    src: ['fontawesome-free/*.*'],
+                    dest: 'dist'
+>>>>>>> 127f887f59af03753bf2efc39b319c8f159284e9
                 }]
             }
         },
@@ -88,7 +94,11 @@ module.exports = function (grunt) {
         useminPrepare: {
             foo: {
                 dest: 'dist',
+<<<<<<< HEAD
                 src: ['index.html']
+=======
+                src: ['index.html'] //'contactus.html','aboutus.html'
+>>>>>>> 127f887f59af03753bf2efc39b319c8f159284e9
             },
             options: {
                 flow: {
@@ -155,7 +165,11 @@ module.exports = function (grunt) {
         // Replaces all assets with their revved version in html and css files.
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
+<<<<<<< HEAD
         //'dist/contactus.html','dist/aboutus.html',
+=======
+        //'dist/contactus.html','dist/aboutus.html'
+>>>>>>> 127f887f59af03753bf2efc39b319c8f159284e9
         usemin: {
             html: ['dist/index.html'],
             options: {
@@ -171,7 +185,12 @@ module.exports = function (grunt) {
                 },
                 files: {                                   // Dictionary of files
                     'dist/index.html': 'dist/index.html',  // 'destination': 'source'
+<<<<<<< HEAD
                     
+=======
+                    // 'dist/contactus.html': 'dist/contactus.html',
+                    // 'dist/aboutus.html': 'dist/aboutus.html',
+>>>>>>> 127f887f59af03753bf2efc39b319c8f159284e9
                 }
             }
         }
