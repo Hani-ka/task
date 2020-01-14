@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                     src : [
                         'css/*.css',
                         '*.html',
-                        'js/*.js'
+                        '*.js'
                     ]
                 },
                 options: {
@@ -57,12 +57,12 @@ module.exports = function (grunt) {
             fonts: {
                 files: [
                 {
-                    //for font-awesome
+                    //for font-awesome     node_modules/@fortawesome/fontawesome-free
                     expand: true,
                     dot: true,
-                    cwd: 'node_modules/font-awesome',
-                    src: ['fonts/*.*'],
-                    dest: 'dist'
+                    cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts',
+                    src: ['*.*'],
+                    dest: 'dist/webfonts/'
                 }]
             }
         },
@@ -78,17 +78,17 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,                  // Enable dynamic expansion
                     cwd: './',                   // Src matches are relative to this path
-                    src: ['img/*.{png,jpg,gif}'],   // Actual patterns to match
+                    src: ['img/*.{png,jpg,gif,jpeg}'],   // Actual patterns to match
                     dest: 'dist/'                  // Destination path prefix
                 }]
             }
         }
         ,
-
+        //'contactus.html','aboutus.html'
         useminPrepare: {
             foo: {
                 dest: 'dist',
-                src: ['contactus.html','aboutus.html','index.html']
+                src: ['index.html']
             },
             options: {
                 flow: {
@@ -118,7 +118,7 @@ module.exports = function (grunt) {
             },
   
             // dist configuration is provided by useminPrepare
-            dist: {}
+            dist: {"dist/js/omar.js":"js/scripts.js"}
         },
 
         // Uglify
@@ -155,14 +155,15 @@ module.exports = function (grunt) {
         // Replaces all assets with their revved version in html and css files.
         // options.assetDirs contains the directories for finding the assets
         // according to their relative paths
-        //
+        //'dist/contactus.html','dist/aboutus.html',
         usemin: {
-            html: ['dist/contactus.html','dist/aboutus.html','dist/index.html'],
+            html: ['dist/index.html'],
             options: {
                 assetsDirs: ['dist', 'dist/css','dist/js']
             }
         },
-
+                                //'dist/contactus.html': 'dist/contactus.html','dist/aboutus.html': 'dist/aboutus.html',
+                      
         htmlmin: {                                         // Task
             dist: {                                        // Target
                 options: {                                 // Target options
@@ -170,15 +171,14 @@ module.exports = function (grunt) {
                 },
                 files: {                                   // Dictionary of files
                     'dist/index.html': 'dist/index.html',  // 'destination': 'source'
-                    'dist/contactus.html': 'dist/contactus.html',
-                    'dist/aboutus.html': 'dist/aboutus.html',
+                    
                 }
             }
         }
     });
 
-    grunt.registerTask('css', ['sass']);
-    grunt.registerTask('default', ['browserSync', 'watch']);
+   grunt.registerTask('css', ['sass']);
+   grunt.registerTask('default', ['browserSync', 'watch']);
     grunt.registerTask('build', [
         'clean',
         'copy',

@@ -11,13 +11,10 @@ html{
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial',sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 300;
     text-rendering: optimizeLegibility;    
 }
-body{font-size:16px;}
-
-
 
 /* ---------------------------------------------------------------------------------------*/
 /* Header*/
@@ -42,12 +39,13 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     color: #fff;
-    border-top: 8px solid transparent;
+    border-top: 4px solid transparent;
     transition: border-top 0.3s;
+    font-size: 90%;
     
 }
 .main-nav li a:hover {
-    border-top: 8px solid #e67e22;
+    border-top: 4px solid #e67e22;
     
 }
 /* navigation buttuns : */ 
@@ -150,6 +148,11 @@ i:active{
     border: none;
     color: #fff;  
 }
+.abslt-l{
+    position: absolute;   
+    bottom:8%;
+    left:-4%
+}   
 /* ---------------------------------------------------------------------------------------*/
 /* Latest JObs Section :*/
 /* ---------------------------------------------------------------------------------------*/
@@ -232,12 +235,27 @@ i:active{
     width: 100%;
     object-fit: cover;
     object-position: bottom;
-    height: 300px; /* only if you want fixed height */
+    height: 366px; /* only if you want fixed height */
     }
+.bgk-work {
+    background-image: linear-gradient(#e67e22, rgba(239, 150, 73, 0.26)), url(../img/1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+        }
+      
+.bgk-work a {
+    background-color: #e4dede; }
+#join .container:last-child{
+    transform: scale(0.9,0.8);
+}
 
 /* ---------------------------------------------------------------------------------------*/
 /* Insights :*/
 /* ---------------------------------------------------------------------------------------*/
+.background-insight div{
+    transform: scale(1.1,1);
+}
 .back-img-1 div{
     background-image: url(../img/5.jpg);
     background-position: center top;
@@ -318,10 +336,20 @@ footer .bord-right i {
 .bord-left {
     border-left: 1px solid  hsl(208, 11%, 58%);
 }
+footer .bord-right i{
+    background-color: #8895a0;
+    border: 1px solid #8895a0;
+    color: #fff;
+    width: 40px;
+    height: 39px;
+    text-align: center;
+    cursor: pointer;
+
+}
 /* ---------------------------------------------------------------------------------------*/
 /* Queries :*/
 /* ---------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1110px){
     nav ul, .nav-btn a{
         font-size: 72%;
     }
@@ -331,9 +359,9 @@ footer .bord-right i {
     .header-form {
         position: absolute;
         width: 100%;
-        top: 20%;
+        top: 30%;
         left: 0%;
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
     .header-icon-nav{
         font-size: 95%;
@@ -349,7 +377,7 @@ footer .bord-right i {
 @media only screen and (max-width: 853px){
     .header-icon-nav{
         font-size: 75%;
-        height: 14%;
+        // height: 14%;
     }
 }
 @media only screen and (max-width: 823px){
@@ -358,29 +386,26 @@ footer .bord-right i {
     }
 }
 @media only screen and (max-width: 812px){
-    nav{
-        background-color: rgba(41, 39, 39, 0.521);
-        }
         .main-nav li a:active,
         .main-nav li a:hover
          {
-            border-top: 8px solid transparent;
+            border-top: 4px solid transparent;
         }
     .header-form {
         transform: scale(0.6);
     }
     .header-icon-nav{
         font-size: 70%;
-        height: 16%;
+        // height: 16%;
     }
     .header-icon-nav .col{
         padding: 0;
     }
+    .background-insight div:hover{
+        transform: scale(10%,10%);
+    }
 }
-@media only screen and (max-width: 786px){
-    nav{
-        background-color: transparent;
-        }
+@media only screen and (max-width: 767px){
         .main-nav li a:active,
         .main-nav li a:hover
          {
@@ -395,16 +420,16 @@ footer .bord-right i {
     }
     .header-icon-nav{
         font-size: 70%;
-        height: 12%;
+        // height: 12%;
     }
     .header-icon-nav .col{
         padding: 0;
     }
-}
+
 @media only screen and (max-width: 740px){
-    .header-icon-nav{
-        height: 20%;
-    }
+    // .header-icon-nav{
+    //     // height: 20%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -417,9 +442,9 @@ footer .bord-right i {
     }
 }
 @media only screen and (max-width: 736px){
-    .header-icon-nav{
-        height: 20%;
-    }
+    // .header-icon-nav{
+    //     height: 20%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -446,18 +471,38 @@ footer .bord-right i {
         padding-right: 6%; 
     }
 }
+@media only screen and (max-width: 640){
+    nav li a{
+        padding-top: -10px; 
+        background-color: transparent;
+    }}
+    nav ul{
+        position: absolute;
+        top:-4%;
+        left:60%
+    }
+    .nav-butn a:link, .nav-butn a:visited {
+        padding:3%;
+        background-color: #e67e22;
+    }
+    .header-form{
+        position: absolute;
+        top:20%;
+
+    }
 @media only screen and (max-width: 568px){
     .header-icon-nav{
-        height: 20%;
+        // height: 20%;
         font-size: 90%;
     }
     .header-form {
         position: absolute;
         width: 100%;
-        top: -10%;
+        top: -1%;
         left: 0%;
-        transform: scale(0.3);
+        transform: scale(0.4);
         font-size: 130%;
+    }
     }
     .header-icon-nav .col{
         padding-right: 6%; 
@@ -465,10 +510,10 @@ footer .bord-right i {
 }
 //phones................portati...................:
 @media only screen and (max-width: 480px){
-    .header-icon-nav{
-        height: 10%;
-        font-size: 90%;
-    }
+    // .header-icon-nav{
+    //     // height: 10%;
+    //     // font-size: 90%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -488,10 +533,10 @@ footer .bord-right i {
     }
 }
 @media only screen and (max-width: 412px){
-    .header-icon-nav{
-        height: 12%;
-        font-size: 90%;
-    }
+    // .header-icon-nav{
+    //     height: 12%;
+    //     font-size: 90%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -504,16 +549,18 @@ footer .bord-right i {
         padding-right: 6%; 
     }
 }
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 398px){
     .header-form {
         top: 17%;
     }
+
 }
+
 @media only screen and (max-width: 360px){
-    .header-icon-nav{
-        height: 12%;
-        font-size: 90%;
-    }
+    // .header-icon-nav{
+    //     height: 12%;
+    //     font-size: 90%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -527,10 +574,10 @@ footer .bord-right i {
     }
 }
 @media only screen and (max-width: 320px){
-    .header-icon-nav{
-        height: 12%;
-        font-size: 76%;
-    }
+    // .header-icon-nav{
+    //     height: 12%;
+    //     // font-size: 76%;
+    // }
     .header-form {
         position: absolute;
         width: 100%;
@@ -553,11 +600,11 @@ footer .bord-right i {
       .header-form {
         position: absolute;
         width: 100%;
-        top: 20%;
+        top: 31%;
         left: 0%;
-        transform: scale(1.0);
-        font-size: 130%; }
+        transform: scale(1);
+        font-size: 170%;
+    }
       .header-icon-nav {
         font-size:160%;
-         }
-}
+         }}
